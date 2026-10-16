@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Khushi's Cute World ♡</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Main website design */
+        body {
+            background: linear-gradient(
+                135deg,
+                #fff0f5,
+                #f3e5f5,
+                #ffe4ec
+            );
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            color: #5c4350;
+        }
+
+        /* Main glowing heading */
+        h1 {
+            color: #d63384;
+            font-size: 30px;
+            text-shadow: 0 0 10px #ff99cc;
+            animation: fadeIn 2s ease;
+        }
+
+        /* Section headings */
+        h2 {
+            color: #c02672;
+        }
+
+        /* Paragraph design */
+        p {
+            color: #6b5360;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Cute rounded boxes */
+        .box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 22px;
+            margin: 22px auto;
+            max-width: 400px;
+            border-radius: 22px;
+            box-shadow: 0 5px 18px #edb6d0;
+            border: 1px solid #ffe0ed;
+        }
+
+        /* Hover effect for boxes */
+        .box {
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-4px);
+        }
+
+        /* Cute button */
+        button {
+            background: #d63384;
+            color: white;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px #f2b6d0;
+        }
+
+        button:hover {
+            background: #a61e62;
+        }
+
+        /* Music video */
+        iframe {
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        /* Floating hearts */
+        .heart {
+            position: fixed;
+            bottom: -35px;
+            font-size: 20px;
+            animation: floatUp 8s linear infinite;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+
+        /* Smooth appearance */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer */
+        footer {
+            color: #a64d79;
+            font-size: 14px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="heart" style="left: 12%; animation-delay: 0s;">♡</div>
+    <div class="heart" style="left: 45%; animation-delay: 3s;">♡</div>
+    <div class="heart" style="left: 80%; animation-delay: 5s;">♡</div>
+
+    <!-- Welcome section -->
+    <h1>Welcome to My World ♡</h1>
+
+    <p>A little corner filled with my favourite things 🌷</p>
+
+    <!-- About Me -->
+    <div class="box">
+        <h2>🌸 Hi, I'm Khushi!</h2>
+
+        <p>
+            Welcome to my little world! 💗
+            <br>
+            I'm learning to create websites,
+            and this is my first personal website.
+        </p>
+
+        <p>♡ Dreaming, learning and growing ♡</p>
+    </div>
+
+    <!-- My Hobbies -->
+    <div class="box">
+        <h2>🎀 My Hobbies</h2>
+
+        <p>♡ Listening to music 🎵</p>
+        <p>♡ Creating reels 📱</p>
+        <p>♡ Learning new things 🌷</p>
+        <p>♡ Exploring creativity ✨</p>
+    </div>
+
+    <!-- Favourite Song -->
+    <div class="box">
+        <h2>💕 My Favourite Song</h2>
+
+        <p>Samjhawan ♡</p>
+
+        <iframe
+            src="https://www.youtube.com/embed/H2f7MZaw3Yo"
+            title="Favourite song"
+            allowfullscreen>
+        </iframe>
+
+        <p>Music makes everything feel special 🎶</p>
+    </div>
+
+    <!-- Cute interactive button -->
+    <div class="box">
+        <h2>💌 A Little Message</h2>
+
+        <p id="message">
+            Click the button for a little reminder! 💗
+        </p>
+
+        <button onclick="showMessage()">
+            Click Me ♡
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Made with ♡ by Khushi 🌸
+        <br>
+        Keep dreaming and keep shining ✨
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "You are growing at your own pace. Keep going! 💗🌷";
+        }
+    </script>
+
+</body>
+  </html>
